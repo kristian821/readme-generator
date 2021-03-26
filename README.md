@@ -10,11 +10,12 @@
     * [Tests](#tests)
     * [License](#license)
 
-  ## Installation Instructions
-    Here are the instructinos
+  ## Installation
+    Here are the instructions
 
   ## Usage
-    Usage info
+    ![Hello, World!](./example-mov.mov)
+    How to use
 
     
      
@@ -22,8 +23,9 @@
 
   ## License
 
+    
 
   ## Questions
-    [GitHub](https://github.com/Kristian821)
+    [GitHub](https://github.com/Kristian821/)
 
     Email Me at kristian821@icloud.com

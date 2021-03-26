@@ -44,6 +44,24 @@ const questions = [
     },
     {
         type: 'confirm',
+        name: 'imageConfirm',
+        message: 'Is there an image or video of your project you would like to include?',
+        default: true
+    },
+    {
+        type: 'input',
+        name: 'image',
+        message: 'Please include a relative pathname to the image you would like to include',
+        when ({imageConfirm}) {
+            if (imageConfirm) {
+                return true;
+            } else {
+                return false;
+            }
+        }    
+    },
+    {
+        type: 'confirm',
         name: 'contributionsConfirm',
         message: 'Any Contributions?',
         default: true
@@ -141,10 +159,7 @@ init()
     })
     .then(pageData => {
         return writeToFile(pageData);
-    })
-    .then(response => {
-        console.log(response);
-    })    
+    })   
     .catch(error => {
         console.log(error);
     });

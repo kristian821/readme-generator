@@ -9,10 +9,15 @@ function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+const renderLicenseSection = (license) => {
+  switch (license) {
+    case 'MIT License':
+      return ``
+  }
+}
 
 
-
+// Create contributions section, If no contributions, return an empty string
 const contributeSection = contributeText => {
   if (!contributeText) {
     return '';
@@ -25,6 +30,7 @@ const contributeSection = contributeText => {
    `
 }
 
+// Create a 'Tests' section, If no tests, return an empty string
 const tests = testText => {
   if (!testText) {
     return '';
@@ -36,6 +42,14 @@ const tests = testText => {
   ${testText}
 
   `
+}
+
+const image = (altName, path) => {
+  if (!path) {
+    return '';
+  }
+
+  return `![${altName}](${path})`
 }
 
 
@@ -55,10 +69,11 @@ const generateMarkdown = (data) => {
     * [Tests](#tests)
     * [License](#license)
 
-  ## Installation Instructions
+  ## Installation
     ${projectInfo.instructions}
 
   ## Usage
+    ${image(projectInfo.title, projectInfo.image)}
     ${projectInfo.usage}
 
     ${contributeSection(projectInfo.contributions)}
@@ -67,9 +82,10 @@ const generateMarkdown = (data) => {
 
   ## License
 
+    ${renderLicenseSection(projectInfo.license)}
 
   ## Questions
-    [GitHub](https://github.com/${projectInfo.github})
+    [GitHub](https://github.com/${projectInfo.github}/)
 
     Email Me at ${projectInfo.email}
 `;
