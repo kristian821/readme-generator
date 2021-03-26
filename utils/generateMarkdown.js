@@ -49,11 +49,11 @@ const generateMarkdown = (data) => {
   ## Description
     ${projectInfo.description}
   ## Table of Contents
-    * [Installation](README.md/#Installation)
-    * [Usage](READEME.md/#Usage)
-    * [Contributions](README.md/#Contributions)
-    * [Tests](README.md/#Tests)
-    * [License](README.md/#License)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Contributions](#contributions)
+    * [Tests](#tests)
+    * [License](#license)
 
   ## Installation Instructions
     ${projectInfo.instructions}
