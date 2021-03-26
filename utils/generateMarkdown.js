@@ -19,7 +19,7 @@ const contributeSection = contributeText => {
   }
 
   return `
-  ##Contributions
+  ## Contributions
 
   ${contributeText}
    `
@@ -31,7 +31,7 @@ const tests = testText => {
   }
 
   return `
-  ##Tests
+  ## Tests
 
   ${testText}
 
@@ -55,20 +55,20 @@ const generateMarkdown = (data) => {
     [Tests](README.md/#Tests)
     [License](README.md/#License)
 
-  ##Installation Instructions
+  ## Installation Instructions
     ${projectInfo.instructions}
 
-  ##Usage
+  ## Usage
     ${projectInfo.usage}
 
     ${contributeSection(projectInfo.contributions)}
      
     ${tests(projectInfo.tests)}
 
-  ##License
+  ## License
 
 
-  ##Questions
+  ## Questions
     [GitHub](https://github.com/${projectInfo.github})
 
     Email Me at ${projectInfo.email}

@@ -115,11 +115,11 @@ const questions = [
 function writeToFile(fileData) {
     
     return new Promise((resolve, reject) => {
-        fs.writeFile = ('README.md', fileData, (err) => {
+        fs.writeFile('README.md', fileData, (err) => {
             if (err) {
                 reject(err)
                 return;
-            }
+            };
             
             resolve({
                 ok: true,
