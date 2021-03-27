@@ -2,20 +2,20 @@
   # Hello, World!
 
   ## Description
-    This is the description
+    Here is a brief description about my project
   ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributions](#contributions)
-    * [Tests](#tests)
-    * [License](#license)
+    *[Installation](#installation)
+    *[Usage](#usage)
+    *[Contributions](#contributions)
+    *[Tests](#tests)
+    *[License](#license)
 
   ## Installation
-    Here are the instructions
+    These are the instructions
 
   ## Usage
-    ![Hello, World!](./example-mov.mov)
-    How to use
+    ![Hello, World!](./example.mov)
+    Usage Info
 
     
      
