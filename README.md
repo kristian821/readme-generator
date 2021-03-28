@@ -19,13 +19,13 @@
     Instructions
 
   ## Usage
-  ![Hello, World!](.example-mov.mov)
+  ![Hello, World!](./example-mp4.mp4)
   Usage
 
   
   ## Contributions
 
-  Contributions
+  Contirbutions
    
      
   
