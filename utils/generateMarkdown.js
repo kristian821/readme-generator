@@ -65,30 +65,35 @@ const generateMarkdown = (data) => {
   ## Table of Contents
 
   *[Installation](#installation)
+
   *[Usage](#usage)
+
   *[Contributions](#contributions)
+
   *[Tests](#tests)
+
   *[License](#license)
 
   ## Installation
     ${projectInfo.instructions}
 
   ## Usage
-    ${image(projectInfo.title, projectInfo.image)}
-    ${projectInfo.usage}
+  ${image(projectInfo.title, projectInfo.image)}
+  ${projectInfo.usage}
 
-    ${contributeSection(projectInfo.contributions)}
+  ${contributeSection(projectInfo.contributions)}
      
-    ${tests(projectInfo.tests)}
+  ${tests(projectInfo.tests)}
 
   ## License
 
-    ${renderLicenseSection(projectInfo.license)}
+  ${renderLicenseSection(projectInfo.license)}
 
   ## Questions
-    [GitHub](https://github.com/${projectInfo.github}/)
 
-    Email Me at ${projectInfo.email}
+  [GitHub](https://github.com/${projectInfo.github}/)
+
+  Email Me at ${projectInfo.email}
 `;
 }
 
