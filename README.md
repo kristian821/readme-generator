@@ -4,7 +4,7 @@
 
   ## Description
 
-  'README Generator' is a Node.JS application where you can create a README.md file for your project just by answering a few questions
+  'README Generator' is a node.js application where you can create a README.md file for your project just by answering a few questions
 
   ## Table of Contents
 
@@ -19,26 +19,31 @@
   * [License](#license)
 
   ## Installation
-  To install this project, you just need to install this project from GitHub
+  To intall this project, you simply need to install this from GitHub
 
   ## Usage
 
-  ![README Generator](./example.png)
-  To use, all you need to do is run 'node index' and then answer the questions as they are asked
+  ![README Generator](./exampleVideo.mp4)
+  To use, all you need to do is run 'node index' from the command line, and answer a few questions as they are asked
   
   ## Contributions
 
-  No Contributions
+  
+  This project uses Node.js and the Inquirer package
+   
 
   ## Tests
 
-  No Tests
+  
+  I don't have any tests for the project
+
+  
 
   ## License
 
   MIT License
 
-Copyright (c) 2021 - Kristian Mitchell
+Copyright (c) 2021 - kristian mitchell
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -62,4 +67,4 @@ SOFTWARE.
 
   [GitHub](https://github.com/Kristian821/)
 
-  Email Me at Kristian821@icloud.com
+  Email Me at kristian821@icloud.com
