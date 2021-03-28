@@ -35,7 +35,7 @@ const questions = [
     {
         type: 'input',
         name: 'instructions',
-        message: 'What are the instructions for your project?'
+        message: 'What are the installation instructions for your project?'
     },
     {
         type: 'input',
@@ -43,58 +43,19 @@ const questions = [
         message: 'Please add any usage information'
     },
     {
-        type: 'confirm',
-        name: 'imageConfirm',
-        message: 'Is there an image or video of your project you would like to include?',
-        default: true
-    },
-    {
         type: 'input',
         name: 'image',
-        message: 'Please include a relative pathname to the image you would like to include (ex. ./example.png)',
-        when ({imageConfirm}) {
-            if (imageConfirm) {
-                return true;
-            } else {
-                return false;
-            }
-        }    
-    },
-    {
-        type: 'confirm',
-        name: 'contributionsConfirm',
-        message: 'Any Contributions?',
-        default: true
+        message: 'If you have an image of your project you would like to include, please add a relative pathname to the image here (ex. `./example.png`)'
     },
     {
         type: 'input', 
         name: 'contributions',
-        message: 'Please enter any contributions.',
-        when ({contributionsConfirm}) {
-            if (contributionsConfirm) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-    },
-    {
-        type: 'confirm',
-        name: 'confirmTests',
-        message: 'Would you like to include any tests?',
-        default: true
+        message: 'If you have any contributions, please add them here'
     },
     {
         type: 'input',
         name: 'tests',
-        message: 'Please add your tests and examples on running them.',
-        when ({confirmTests}) {
-            if (confirmTests) {
-                return true;
-            } else {
-                return false;
-            }
-        }
+        message: 'If you have any tests, please add them here'
     },
     {
         type: 'list',
@@ -110,6 +71,7 @@ const questions = [
             if (githubInput) {
                 return true;
             } else {
+                console.log('Please enter your GitHub Username.')
                 return false;
             }
         }
@@ -122,6 +84,20 @@ const questions = [
             if (emailInput) {
                 return true;
             } else {
+                console.log('Please enter your email.')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'name',
+        message: 'What is your full name',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please enter your name.')
                 return false;
             }
         }
@@ -159,7 +135,7 @@ init()
     })
     .then(pageData => {
         return writeToFile(pageData);
-    })   
+    })
     .catch(error => {
         console.log(error);
     });
