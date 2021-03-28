@@ -51,7 +51,7 @@ const questions = [
     {
         type: 'input',
         name: 'image',
-        message: 'Please include a relative pathname to the image you would like to include',
+        message: 'Please include a relative pathname to the image you would like to include (ex. ./example.png)',
         when ({imageConfirm}) {
             if (imageConfirm) {
                 return true;

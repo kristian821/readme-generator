@@ -64,15 +64,15 @@ const generateMarkdown = (data) => {
     ${projectInfo.description}
   ## Table of Contents
 
-  *[Installation](#installation)
+  * [Installation](#installation)
 
-  *[Usage](#usage)
+  * [Usage](#usage)
 
-  *[Contributions](#contributions)
+  * [Contributions](#contributions)
 
-  *[Tests](#tests)
+  * [Tests](#tests)
 
-  *[License](#license)
+  * [License](#license)
 
   ## Installation
     ${projectInfo.instructions}

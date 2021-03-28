@@ -5,22 +5,22 @@
     Description
   ## Table of Contents
 
-  *[Installation](#installation)
+  * [Installation](#installation)
 
-  *[Usage](#usage)
+  * [Usage](#usage)
 
-  *[Contributions](#contributions)
+  * [Contributions](#contributions)
 
-  *[Tests](#tests)
+  * [Tests](#tests)
 
-  *[License](#license)
+  * [License](#license)
 
   ## Installation
     Instructions
 
   ## Usage
-  ![Hello, World!](./example-mov.mov)
-  Usage Info
+  ![Hello, World!](.example-mov.mov)
+  Usage
 
   
   ## Contributions
@@ -43,4 +43,4 @@
 
   [GitHub](https://github.com/Kristian821/)
 
-  Email Me at kristian821@icloud.com
+  Email Me at Kristian821@icloud.com
