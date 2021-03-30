@@ -1010,6 +1010,7 @@ const image = (altName, path) => {
 const generateMarkdown = (data) => {
   const projectInfo = data;
 
+
   return `
   # ${projectInfo.title}
   ${renderLicenseLink(projectInfo.license)}

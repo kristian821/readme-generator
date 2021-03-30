@@ -109,7 +109,7 @@ const questions = [
 function writeToFile(fileData) {
     
     return new Promise((resolve, reject) => {
-        fs.writeFile('README.md', fileData, (err) => {
+        fs.writeFile(`README.md`, fileData, (err) => {
             if (err) {
                 reject(err)
                 return;
@@ -131,7 +131,8 @@ function init() {
 // Function call to initialize app
 init()
     .then(projectInfo => {
-        return generateMarkdown(projectInfo) 
+        let path = projectInfo.path;
+        return generateMarkdown(projectInfo); 
     })
     .then(pageData => {
         return writeToFile(pageData);
