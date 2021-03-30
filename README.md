@@ -25,6 +25,8 @@
 
   ![README Generator](./example.png)
   To use, You just need to run 'node index' and then answer the questions as the are asked
+
+  ![You can view a video here](./exampleVideo.mp4)
   
   ## Contributions
 
